@@ -18,7 +18,7 @@ public class SignInTest {
     public void init(){
         ChromeOptions options = new ChromeOptions();
         //options.setHeadless(true);
-       /* options.addArguments("--headless=new");*/
+        options.addArguments("--headless=new");
         System.setProperty("webdriver.chrome.whitelistedIps", "167.86.76.193");
         webDriver = new ChromeDriver(options);
         webDriver.get("http://167.86.76.193/home");
