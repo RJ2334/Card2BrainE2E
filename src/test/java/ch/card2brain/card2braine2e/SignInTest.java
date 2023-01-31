@@ -4,6 +4,7 @@ import io.qameta.allure.Feature;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -15,13 +16,17 @@ public class SignInTest {
 
     @BeforeTest
     public void init(){
-        webDriver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.setHeadless(true);
+        System.setProperty("webdriver.chrome.whitelistedIps", "167.86.76.193");
+        webDriver = new ChromeDriver(options);
         webDriver.get("http://167.86.76.193/home");
     }
 
     @AfterTest
     public void close(){
         webDriver.close();
+        webDriver.quit();
     }
     @Feature("SignIn")
     @Test(groups = {"SignInAndLogin"})
@@ -35,6 +40,18 @@ public class SignInTest {
         webDriver.findElement(By.id("password")).sendKeys("Hallo1234");
         //Submit
         webDriver.findElement(By.xpath("/html/body/app-root/div/main/app-signup/div/form/div[3]/div[2]/button")).click();
+
+    }
+    @Feature("LogIn")
+    @Test(groups = {"SignInAndLogin"})
+    public void logInTest() {
+        // click on button signin
+        webDriver.findElement(By.cssSelector("#navbar > form:nth-child(1) >button.btn.btn-primary.ms-1")).click();
+        // Fill in the users information
+        webDriver.findElement(By.cssSelector("#floatingInput")).sendKeys("Max@Musterman.ch");
+        webDriver.findElement(By.cssSelector("#floatingPassword")).sendKeys("Hallo1234");
+        //Submit
+        webDriver.findElement(By.cssSelector("body > app-root > div > main > app-login > div > div > div > div > div > form > div.d-grid > button")).click();
 
     }
 
