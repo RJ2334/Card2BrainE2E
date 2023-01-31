@@ -1,5 +1,6 @@
 package ch.card2brain.card2braine2e;
 
+import io.qameta.allure.Feature;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 
+@Feature("SignIn and Login")
 public class SignInTest {
     private static WebDriver webDriver;
 
@@ -21,7 +23,8 @@ public class SignInTest {
     public void close(){
         webDriver.close();
     }
-    @Test
+    @Feature("SignIn")
+    @Test(groups = {"SignInAndLogin"})
     public void signInTest() {
         // click on button signin
         webDriver.findElement(By.cssSelector("button.btn.btn-secondary.ms-1")).click();
