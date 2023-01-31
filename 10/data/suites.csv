@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jan 31 22:16:59 GMT 2023","Tue Jan 31 22:16:59 GMT 2023","298","Surefire suite","Surefire test","ch.card2brain.card2braine2e.SignInTest","ch.card2brain.card2braine2e.SignInTest","logInTest","logInTest",""
+"passed","Tue Jan 31 22:16:59 GMT 2023","Tue Jan 31 22:16:59 GMT 2023","491","Surefire suite","Surefire test","ch.card2brain.card2braine2e.SignInTest","ch.card2brain.card2braine2e.SignInTest","signInTest","signInTest",""
