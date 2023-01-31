@@ -23,7 +23,6 @@ public class SignInTest {
         webDriver = new ChromeDriver(options);
         webDriver.get("http://167.86.76.193/home");
     }
-
     @AfterTest
     public void close(){
         webDriver.close();
