@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 @Feature("SignIn and Login")
 public class SignInTest {
-    private static WebDriver webDriver;
+    private  WebDriver webDriver;
 
     @BeforeTest
     public void init(){
@@ -43,7 +43,7 @@ public class SignInTest {
         webDriver.findElement(By.id("password")).sendKeys("Hallo1234");
         //Submit
         webDriver.findElement(By.xpath("/html/body/app-root/div/main/app-signup/div/form/div[3]/div[2]/button")).click();
-        //screenshot();
+        screenshot();
     }
     @Feature("LogIn")
     @Test(groups = {"SignInAndLogin"})

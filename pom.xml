@@ -16,6 +16,7 @@
         <aspectj.version>1.9.5</aspectj.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <ashot-version>1.5.4</ashot-version>
     </properties>
 
 
@@ -60,6 +61,11 @@
             <version>4.0.0-rc-1</version>
         </dependency>
     </dependencies>
+    <dependency>
+        <groupId>ru.yandex.qatools.ashot</groupId>
+        <artifactId>ashot</artifactId>
+        <version>${ashot-version}</version>
+    </dependency>
 
     <build>
         <plugins>
