@@ -1,6 +1,6 @@
 name: allure-junit5-maven
 
-on: master
+build:
 
 jobs:
   build:
