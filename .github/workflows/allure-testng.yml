@@ -1,6 +1,6 @@
 name: allure-junit5-maven
 
-on: paused
+on: master
 
 jobs:
   build:
