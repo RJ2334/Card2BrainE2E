@@ -29,7 +29,7 @@ public class LoginInTest {
         webDriver = new ChromeDriver(options);
         webDriver.get("http://167.86.76.193/home");
 
-        System.out.println(webDriver.getTitle());
+        //System.out.println(webDriver.getTitle());
         //webDriver = new ChromeDriver(options);
     }
 
