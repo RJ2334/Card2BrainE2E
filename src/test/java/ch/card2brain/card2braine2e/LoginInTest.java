@@ -12,25 +12,33 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.net.MalformedURLException;
+
 
 @Feature("SignIn and Login")
 public class LoginInTest {
-    private  WebDriver webDriver;
+    private WebDriver webDriver;
 
     @BeforeTest
-    public void init(){
-        ChromeOptions options = new ChromeOptions();
+    public void init() throws MalformedURLException {
         //options.setHeadless(true);
-        options.addArguments("--headless=new");
-        System.setProperty("webdriver.chrome.whitelistedIps", "167.86.76.193");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--disable-dev-shm-usage");
         webDriver = new ChromeDriver(options);
         webDriver.get("http://167.86.76.193/home");
+
+        System.out.println(webDriver.getTitle());
+        //webDriver = new ChromeDriver(options);
     }
+
     @AfterTest
-    public void close(){
+    public void close() {
         webDriver.close();
         webDriver.quit();
     }
+
     @Feature("LogIn")
     @Test(groups = {"SignInAndLogin"})
     public void logInTest() {
