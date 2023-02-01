@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"skipped","Wed Feb 01 06:32:03 GMT 2023","Wed Feb 01 06:32:03 GMT 2023","0","Surefire suite","Surefire test","ch.card2brain.card2braine2e.SignInTest","ch.card2brain.card2braine2e.SignInTest","signInTest","signInTest",""
-"broken","Wed Feb 01 06:32:03 GMT 2023","Wed Feb 01 06:32:03 GMT 2023","2","Surefire suite","Surefire test","ch.card2brain.card2braine2e.SignInTest","ch.card2brain.card2braine2e.SignInTest","init","init",""
-"skipped","Wed Feb 01 06:32:03 GMT 2023","Wed Feb 01 06:32:03 GMT 2023","2","Surefire suite","Surefire test","ch.card2brain.card2braine2e.SignInTest","ch.card2brain.card2braine2e.SignInTest","logInTest","logInTest",""
+"skipped","Wed Feb 01 15:31:31 GMT 2023","Wed Feb 01 15:31:31 GMT 2023","0","Surefire suite","Surefire test","ch.card2brain.card2braine2e.SignInTest","ch.card2brain.card2braine2e.SignInTest","signInTest","signInTest",""
+"broken","Wed Feb 01 15:31:31 GMT 2023","Wed Feb 01 15:31:31 GMT 2023","6","Surefire suite","Surefire test","ch.card2brain.card2braine2e.SignInTest","ch.card2brain.card2braine2e.SignInTest","init","init",""
+"skipped","Wed Feb 01 15:31:31 GMT 2023","Wed Feb 01 15:31:31 GMT 2023","2","Surefire suite","Surefire test","ch.card2brain.card2braine2e.SignInTest","ch.card2brain.card2braine2e.SignInTest","logInTest","logInTest",""
