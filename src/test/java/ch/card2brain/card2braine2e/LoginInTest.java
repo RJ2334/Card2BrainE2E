@@ -50,7 +50,7 @@ public class LoginInTest {
         webDriver.findElement(By.cssSelector("#floatingPassword")).sendKeys("Hallo1234");
         //Submit
         webDriver.findElement(By.cssSelector("body > app-root > div > main > app-login > div > div > div > div > div > form > div.d-grid > button")).click();
-        //screenshot();
+        screenshot();
     }
 
     @Attachment(value = "Screenshot", type = "image/png")
