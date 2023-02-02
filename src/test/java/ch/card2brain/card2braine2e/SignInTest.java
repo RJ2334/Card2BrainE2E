@@ -44,11 +44,6 @@ public class SignInTest {
         webDriver.findElement(By.id("password")).sendKeys("Hallo1234");
         //Submit
         webDriver.findElement(By.xpath("/html/body/app-root/div/main/app-signup/div/form/div[3]/div[2]/button")).click();
-        //screenshot();
-    }
-    @Attachment(value = "Screenshot", type = "image/png")
-    public byte[] screenshot() {
-        return ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
     }
 
 }
