@@ -21,8 +21,9 @@ public class LoginInTest {
 
     @BeforeTest
     public void init() throws MalformedURLException {
-        //options.setHeadless(true);
+        // options.setHeadless(true);
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
         options.addArguments("--headless");
         options.addArguments("--disable-gpu");
         options.addArguments("--disable-dev-shm-usage");
